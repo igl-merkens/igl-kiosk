@@ -1,0 +1,17 @@
+[project]
+name = "igl-informer_kiosk"
+version = "0.0.1"
+description = "A kiosk application for IGL Informer"
+authors = [
+    { name = "Maximilian Erkens", email = "max@max-erkens.de" }
+]
+license = { file = "LICENSE" }
+#dependencies = [
+#    "PyQt6 == 6.4.0",
+#    "PyQt6-WebEngine == 6.4.0",
+#]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
