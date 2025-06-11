@@ -73,47 +73,6 @@ The application monitors a JSON file called `web_display_commands.json` in the c
 - **F11**: Toggle fullscreen mode
 - **Ctrl+R**: Reload the current page
 
-## Project Structure
-
-```
-fullscreen_web_display/
-├── src/
-│   └── fullscreen_web_display/
-│       ├── __init__.py
-│       ├── main.py              # Main entry point
-│       ├── core/
-│       │   ├── __init__.py
-│       │   ├── browser.py       # Browser core functionality
-│       │   └── url_injector.py  # URL injection handling
-│       ├── ui/
-│       │   ├── __init__.py
-│       │   ├── main_window.py   # Main window implementation
-│       │   └── templates.py     # HTML templates
-│       └── utils/
-│           ├── __init__.py
-│           └── shortcuts.py     # Keyboard shortcuts
-├── tests/                       # Test suite
-├── requirements.txt
-├── setup.py
-└── README.md
-```
-
-## Architecture
-
-The application is built with a clean, modular architecture:
-
-- **Core Module**: Contains the main browser functionality and URL injection logic
-- **UI Module**: Handles the user interface components and HTML templates  
-- **Utils Module**: Provides utility functions like keyboard shortcut management
-- **Separation of Concerns**: Each module has a specific responsibility
-
-### Key Components
-
-- **URLInjector**: Monitors the JSON command file for URL changes
-- **BackgroundLoader**: Handles loading pages in the background
-- **FullscreenWebBrowser**: Main window that orchestrates everything
-- **ShortcutManager**: Manages keyboard shortcuts
-
 ## Development
 
 ### Running Tests
@@ -134,7 +93,7 @@ black src/
 
 1. Fork the repository
 2. Create a feature branch
-3. Add your changes following the existing architecture
+3. Add your changes in reasonable commits
 4. Add tests for new functionality
 5. Submit a pull request
 
@@ -170,7 +129,8 @@ DEBUG=1 fullscreen-web-display
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is currently copyrighted by me but contributions are very welcome.
+I just have to find the right open source license.
 
 ## Contributing
 
