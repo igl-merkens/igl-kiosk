@@ -3,12 +3,12 @@ Keyboard shortcuts utilities.
 """
 
 from PyQt6.QtGui import QKeySequence, QShortcut
+from PyQt6.QtWidgets import QWidget
 
 
 class ShortcutManager:
     """Manages keyboard shortcuts for the application."""
-
-    def __init__(self, parent):
+    def __init__(self, parent: QWidget):
         self.parent = parent
         self.shortcuts = []
 

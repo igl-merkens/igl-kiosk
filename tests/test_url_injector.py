@@ -3,15 +3,15 @@
 
 import json
 import tempfile
-import time
+#import time
 import unittest
 from pathlib import Path
-from unittest.mock import patch, MagicMock
+#from unittest.mock import patch, MagicMock
 
 from PyQt6.QtCore import QCoreApplication
 from PyQt6.QtTest import QSignalSpy
 
-from fullscreen_web_display.core.url_injector import URLInjector
+from igl_kiosk.core.url_injector import URLInjector
 
 
 class TestURLInjector(unittest.TestCase):

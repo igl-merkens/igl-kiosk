@@ -9,7 +9,7 @@ def get_welcome_html():
     <!DOCTYPE html>
     <html>
     <head>
-        <title>Fullscreen Web Display</title>
+        <title>IGL Informer</title>
         <style>
             body {
                 font-family: Arial, sans-serif;
@@ -63,7 +63,7 @@ def get_welcome_html():
     </head>
     <body>
         <div class="container">
-            <h1>🌐 Fullscreen Web Display</h1>
+            <h1>🌐 IGL Informer</h1>
             <div class="info">
                 Ready to display websites injected via external commands!<br>
                 <small>Pages load in background and display when fully loaded</small>

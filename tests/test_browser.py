@@ -5,7 +5,7 @@ from unittest.mock import MagicMock, patch
 
 from PyQt6.QtCore import QCoreApplication
 
-from fullscreen_web_display.core.browser import BackgroundLoader, URLHandler
+from igl_kiosk.core.browser import BackgroundLoader, URLHandler
 
 
 class TestURLHandler(unittest.TestCase):
@@ -54,7 +54,7 @@ class TestBackgroundLoader(unittest.TestCase):
         """Clean up test fixtures."""
         self.loader.cleanup()
     
-    @patch('fullscreen_web_display.core.browser.QWebEngineView')
+    @patch('igl_kiosk.core.browser.QWebEngineView')
     def test_load_url(self, mock_web_view):
         """Test URL loading."""
         mock_view = MagicMock()
