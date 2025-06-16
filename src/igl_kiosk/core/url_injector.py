@@ -6,13 +6,13 @@ import json
 import threading
 import time
 from pathlib import Path
-from PyQt6.QtCore import QObject, pyqtSignal
+from PySide6.QtCore import QObject, Signal
 
 
 class URLInjector(QObject):
     """Handles external URL injection via file monitoring."""
 
-    url_received = pyqtSignal(str)
+    url_received = Signal(str)
 
     def __init__(self, command_file_path="web_display_commands.json"):
         super().__init__()

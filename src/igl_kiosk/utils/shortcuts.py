@@ -2,8 +2,8 @@
 Keyboard shortcuts utilities.
 """
 
-from PyQt6.QtGui import QKeySequence, QShortcut
-from PyQt6.QtWidgets import QWidget
+from PySide6.QtGui import QKeySequence, QShortcut
+from PySide6.QtWidgets import QWidget
 
 
 class ShortcutManager:

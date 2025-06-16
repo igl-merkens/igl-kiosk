@@ -8,8 +8,8 @@ import unittest
 from pathlib import Path
 #from unittest.mock import patch, MagicMock
 
-from PyQt6.QtCore import QCoreApplication
-from PyQt6.QtTest import QSignalSpy
+from PySide6.QtCore import QCoreApplication
+from PySide6.QtTest import QSignalSpy
 
 from igl_kiosk.core.url_injector import URLInjector
 

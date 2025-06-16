@@ -10,9 +10,9 @@ packages = [
 ]
 
 [tool.poetry.dependencies]
-python = ">=3.10"
-pyqt6 = "^6.4.0"
-pyqt6-webengine = "^6.4.0"
+python = ">=3.9,<3.13"
+pyside6 = "^6.4.0"
+pyside6-addons = "^6.4.0"
 
 [tool.poetry.scripts]
 igl-kiosk = "igl_kiosk.main:main"

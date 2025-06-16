@@ -2,14 +2,14 @@
 Core browser functionality for background loading and URL handling.
 """
 
-from PyQt6.QtWebEngineWidgets import QWebEngineView
-from PyQt6.QtCore import QUrl, pyqtSignal, QObject
+from PySide6.QtWebEngineWidgets import QWebEngineView
+from PySide6.QtCore import QUrl, Signal, QObject
 
 
 class BackgroundLoader(QObject):
     """Handles background loading of web pages."""
 
-    load_completed = pyqtSignal(bool, str, QWebEngineView)  # success, url, web_view
+    load_completed = Signal(bool, str, QWebEngineView)  # success, url, web_view
 
     def __init__(self):
         super().__init__()

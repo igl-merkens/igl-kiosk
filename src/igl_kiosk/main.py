@@ -5,7 +5,7 @@ Main entry point for the Fullscreen Web Display application.
 
 import sys
 from pathlib import Path
-from PyQt6.QtWidgets import QApplication
+from PySide6.QtWidgets import QApplication
 
 from .ui.main_window import FullscreenWebBrowser
 
